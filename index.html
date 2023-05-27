@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <!-- Navbar Starts -->
+  <header class="w-full sticky top-0 z-50">
+    <nav class="relative px-6 py-4 lg:py-5 flex justify-between items-center bg-primary">
+      <a class="flex text-3xl font-bold leading-none" href="index.html">
+        <img src="/src/img/White Hori.png" alt="Logo" class="lg:w-[210px] w-[160px]">
+        </a>
+    <div class="lg:hidden">
+        <button class="navbar-burger flex items-center border-2 rounded-xl border-button text-button p-2">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden absolute top-1/2 left-1/3 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-4">
+        <li><a class="text-base text-white hover:text-gray-400"
+            href="/">BERANDA</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+        <li><a class="text-base text-white hover:text-gray-400 "
+            href="/about">TENTANG</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+        <li><a class="text-base text-white hover:text-gray-400 "
+            href="/posts">AKTIVITAS SEKOLAH</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+        <li><a class="text-base text-white hover:text-gray-400 "
+            href="/categories">INFORMASI</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+        <li><a class="text-base text-white hover:text-gray-400 "
+            href="/categories">PROGRAM</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+        <li><a class="text-base text-white hover:text-gray-400 "
+            href="/categories">ARTIKEL</a></li>
+        <li class="text-gray-500">
+          <p>|</p>
+        </li>
+      </ul>
+      <div class="flex flex-row gap-x-5 mt-1">
+        <div>
+          <a class="hidden lg:block right-0 bg-gradient-to-tr from-orange-400 via-red-500 to-purple-500 rounded-full py-4 px-4"
+      href="#"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="white"></path> </svg></a>
+        </div>
+        <div>
+          <a class="hidden lg:block right-0 bg-red-700 rounded-full py-4 px-4"
+      href="#"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="white"></path> </svg></a>
+        </div>
+        <div>
+          <a class="hidden lg:block right-0 bg-green-500 rounded-full py-4 px-4"
+      href="#"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" fill="white"></path> </svg></a>
+        </div>
+        <div>
+          <a class="hidden lg:inline-block py-2 px-6 text-lg font-bold rounded-xl mt-0.5 bg-button focus:bg-slate-800 hover:shadow-lg hover:bg-yellow-200 transition duration-300 ease-in-out"
+      href="#">
+        Daftar</a>
+        </div>
+      </div>
+
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r border-gray-800 overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <svg class="h-12" alt="logo" viewBox="0 0 100 100">
+              <path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+            </svg>
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-button cursor-pointer hover:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-primary rounded" 
+              href="/">Home</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-primary rounded" 
+              href="/about">About</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-primary rounded" 
+              href="/posts">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold border border-white hover:bg-gray-100 hover:text-primary text-white  rounded-xl transition duration-200" href="#">
+              Sign in</a>
+            <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center bg-button border border-button hover:border-white hover:bg-primary hover:text-white text-primary font-bold rounded-xl transition duration-200" href="#">
+              Sign Up</a>
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Al Khoir © 2022</span>
+          </p>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Navbar Ends -->
+  <body>
+    <!-- Hero Section Start -->
+    <section id="Home" class="w-full px-0 bg-primary -z-40 h-[520px]">
+      <!-- Carousel Start -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+          <script>
+            var cont=0;
+        function loopSlider(){
+          var xx= setInterval(function(){
+                switch(cont)
+                {
+                case 0:{
+                    $("#slider-1").fadeOut(400);
+                    $("#slider-2").delay(400).fadeIn(400);
+                    $("#sButton1").removeClass("bg-purple-800");
+                    $("#sButton2").addClass("bg-purple-800");
+                cont=1;
+                
+                break;
+                }
+                case 1:
+                {
+                
+                    $("#slider-2").fadeOut(400);
+                    $("#slider-1").delay(400).fadeIn(400);
+                    $("#sButton2").removeClass("bg-purple-800");
+                    $("#sButton1").addClass("bg-purple-800");
+                   
+                cont=0;
+                
+                break;
+                }
+                
+                
+                }},8000);
+        
+        }
+        
+        function reinitLoop(time){
+        clearInterval(xx);
+        setTimeout(loopSlider(),time);
+        }
+        
+        
+        
+        function sliderButton1(){
+        
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+            reinitLoop(4000);
+            cont=0
+            
+            }
+            
+            function sliderButton2(){
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+            reinitLoop(4000);
+            cont=1
+            
+            }
+        
+            $(window).ready(function(){
+                $("#slider-2").hide();
+                $("#sButton1").addClass("bg-purple-800");
+                
+        
+                loopSlider();
+             
+                
+            
+            
+            
+            
+            });
+        
+          
+          </script>
+          <div class="static">
+          <div class="sliderAx h-auto w-full mx-auto absolute">
+            <div id="slider-1" class="h-[520px]">
+              <div class="bg-cover mx-auto bg-center " style="background-image: url(https://source.unsplash.com/1200x520?fish)">
+              <div class="w-full text-center mx-auto text-white bg-black bg-opacity-40 py-32 h-[520px]">
+                <div class="container">
+                  <p class="font-bold text-sm uppercase">Welcome to</p>
+                  <p class="text-7xl font-extrabold mb-2">Al Khoir</p>
+                  <p class="text-xl mb-10 leading-none">Islamic Homeschooling</p>
+                  <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">About us</a>
+                </div>  
+              </div>  
+          </div> <!-- container -->
+            <br>
+            </div>
+      
+            <div id="slider-2" class="h-[520px]">
+              <div class="bg-cover mx-auto bg-center" style="background-image: url(https://source.unsplash.com/1200x520?cat)">
+             <div class="w-full text-left mx-auto text-white bg-black bg-opacity-40 py-52 h-[520px]">
+              <div class="container">
+              <p class="font-bold text-sm uppercase">Services</p>
+              <p class="text-3xl font-bold">Hello world</p>
+              <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+              <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+            </div>  
+            </div>  
+          </div> <!-- container -->
+            <br>
+            </div>
+          </div>
+          <!-- Hero Box Start -->
+          <div class="absolute lg:mt-[620px] mt-[960px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex lg:flex-row flex-col gap-y-8 lg:gap-x-10">
+            <!-- List Starts -->
+            <div class="bg-slate-50 shadow-2xl border border-gray-300 rounded-3xl w-[400px] h-[320px] px-8  py-7" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="700">
+              <h1 class="font-bold text-2xl mb-4">Selamat datang di Al Khoir</h1>
+              <div class="container">
+                <div>
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">              
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">
+                </div>
+              </div>
+              <button class="flex mx-auto text-center border border-button px-36 py-2 my-4 rounded-3xl font-black text-button mt-8">Join</button>
+            </div>
+            <div class="bg-slate-50 shadow-2xl border border-gray-300 rounded-3xl w-[400px] h-[320px] px-8  py-7"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="700">
+              <h1 class="font-bold text-2xl mb-4">Selamat datang di Al Khoir</h1>
+              <div class="container">
+                <div>
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">              
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">
+                </div>
+              </div>
+              <button class="flex mx-auto text-center border border-button px-36 py-2 my-4 rounded-3xl font-black text-button mt-8">Join</button>
+            </div>
+            <div class="bg-slate-50 shadow-2xl border border-gray-300 rounded-3xl w-[400px] h-[320px] px-8  py-7" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="700">
+              <h1 class="font-bold text-2xl mb-4">Selamat datang di Al Khoir</h1>
+              <div class="container">
+                <div>
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">              
+                <h2 class="flex"><svg style="color: rgb(160, 227, 104);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill my-1 mr-2" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#a0e368"></path> </svg>Get 10% OFF on your first purchase. *Login Request*</h2>
+                <hr class="h-px my-2 bg-gray-300 border-0">
+                </div>
+              </div>
+              <button class="flex mx-auto text-center border border-button px-36 py-2 my-4 rounded-3xl font-black text-button mt-8">Join</button>
+            </div>
+            <!-- List Ends -->
+          </div>
+          <!-- Hero Box Ends -->
+        </div>
+         <!-- <div class="flex w-12 mx-auto pb-2 absolute">
+            <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
+            <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+          </div> -->
+      <!-- Carousel Ends -->
+    </section>
+<!-- Hero Section Ends -->
+
+<!-- Carousel Avatar starts -->
+    <section id="parentStudent" class="lg:mt-[288px] mt-[980px] pb-16 w-full">
+      <div class="container mx-auto">
+        <a href=""><h1 class="font-extrabold uppercase text-white text-3xl lg:text-5xl text-center bg-button hover:shadow-lg hover:bg-button hover:text-white hover:bg-opacity-80 transition duration-300 ease-in-out py-2 rounded-xl">Penerimaan Siswa Baru / Pindahan</h1></a>
+      </div>
+      <!-- Carousel Starts -->
+      <div class="w-full">
+        <div id="default-carousel" class="relative w-full" data-carousel="static">
+              <!-- Carousel wrapper -->
+              <div class="mt-12 overflow-hidden relative lg:h-[320px] w-full h-[200px] bg-slate-200" data-aos="zoom-out-up">
+                  <!-- Item 1 -->
+                  <div class="grid lg:grid-cols-5 grid-cols-4 duration-700 gap-5 ease-in-out lg:mx-auto text-center place-items-center place-content-center mb-14" data-carousel-item>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-lg">HOMESCHOOLING</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-lg">UJIAN KESETARAAN</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-lg">TAHSIN & TAHFIZH</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-lg">UJIAN CAMBRIDGE</h1></div>
+                    </div>
+                    <div class="lg:block hidden lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-lg">STIFFIn TEST</h1></div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="grid lg:grid-cols-5 grid-cols-4 duration-700 gap-5 ease-in-out lg:mx-auto text-center place-items-center place-content-center mb-14" data-carousel-item>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Homeschooling</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Ujian Kesetaraan</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Tahsin & Tahfizh</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Ujian Cambridge</h1></div>
+                    </div>
+                    <div class="lg:block hidden lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">STIFFIn Test</h1></div>
+                    </div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="grid lg:grid-cols-5 grid-cols-4 duration-700 gap-5 ease-in-out lg:mx-auto text-center place-items-center place-content-center mb-14" data-carousel-item>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Homeschooling</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Ujian Kesetaraan</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Tahsin & Tahfizh</h1></div>
+                    </div>
+                    <div class="lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">Ujian Cambridge</h1></div>
+                    </div>
+                    <div class="lg:block hidden lg:w-[170px] lg:h-[170px] w-[50px] h-[50px] flex-col"><a href="b"><img src="https://source.unsplash.com/170x170?cat" alt="" class="rounded-full"></a>
+                      <div class="text-center pt-2"><h1 class="font-semibold tracking-wider text-xl">STIFFIn Test</h1></div>
+                    </div>
+                  </div>
+              </div>
+              <!-- Slider indicators -->
+              <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+              </div>
+              <!-- Slider controls -->
+              <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none mx-8" data-carousel-prev>
+                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black/30 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                      <span class="hidden">Previous</span>
+                  </span>
+              </button>
+              <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none mx-8" data-carousel-next>
+                  <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black/30 group-hover:bg-black/50 group-focus:ring-4 group-focus:ring-white">
+                      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                      <span class="hidden">Next</span>
+                  </span>
+              </button>
+          </div>
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+      <!-- Carousel Ends -->
+    </section>
+<!-- Carousel Avatar ends -->
+  
+<!-- About Section Start -->
+  <section id="About" class="pt-16 pb-20 px-12">
+    <div class="absolute left-80">
+      <h1 class="font-extrabold text-[200px] -z-10 text-button opacity-30">?</h1>
+    </div>
+    <div class="container w-full">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-2 lg:w-1/2"></w>
+        <h1 class="text-5xl font-extrabold mb-5 text-primary lg:text-left text-center">Kenapa Harus<br>Al Khoir.</h1>
+        <h3 class="relative font-extrabold text-primary text-xl text-center lg:text-left">Dengan Misi</h3>
+        <h2 class="relative font-semibold text-slate-600 text-lg max-w-xl pb-4">
+          1.<span class="pb-2"> Menumbuhkan motivasi agar siswa mencintai Alquran<br>
+          2.<span class="pb-2"> Membangun karakter peserta didik berdasarkan nilai keislaman<br>
+          3.<span class="pb-2"> Melaksanakan kurikulum nasional<br>
+          4.<span class="pb-2"> Menciptakan iklim pembelajaran yang komunikatif, kreatif & inovatif</h2>
+        <h3 class="relative font-extrabold text-primary text-xl text-center lg:text-left">Dan Visi</h3>
+        <h2 class="relative font-semibold text-slate-600 text-lg max-w-xl">Semoga Allah mampukan agar menjadi Lembaga yang mampu untuk mewujudkan generasi yang hafal Al Quran, cerdas, memiliki Akhlaqul Karimah. 
+          Serta berpartisipasi dalam membangun umat.</h2>
+        
+      </div>
+      <div class="w-full px-4 lg:w-1/2 lg:pt-0 pt-4">
+          <!-- Accordion Start -->
+          <div class="flex flex-col w-full pb-32">
+            <h1 class="font-extrabold text-primary text-3xl text-center lg:text-left pb-6">Pertanyaan Yang Sering Ditanyakan</h1>
+            <!-- List Start -->
+            <button class="group bg-button rounded-xl my-1 focus:bg-slate-800 hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out" data-aos="zoom-in-right">
+              <div class="flex items-center justify-between h-12 px-3 font-semibold">
+                <span class="truncate text-white px-5">Apa itu</span>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="max-h-0 duration-300 group-focus:max-h-40">
+                <h1 class="inline-block focus:flex items-center text-left px-8 py-4 text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum maxime recusandae eum velit deserunt tempora asperiores aspernatur? Culpa, mollitia!
+                </h1>
+              </div>
+            </button>
+            <button class="group bg-button rounded-xl my-1 focus:bg-slate-800 hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out" data-aos="zoom-in-right">
+              <div class="flex items-center justify-between h-12 px-3 font-semibold">
+                <span class="truncate text-white px-5">Kenapa Al Khoir</span>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="max-h-0 duration-300 group-focus:max-h-40">
+                <h1 class="inline-block focus:flex items-center text-left px-8 py-4 text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum maxime recusandae eum velit deserunt tempora asperiores aspernatur? Culpa, mollitia!
+                </h1>
+              </div>
+            </button>
+            <button class="group bg-button rounded-xl my-1 focus:bg-slate-800 hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out" data-aos="zoom-in-right">
+              <div class="flex items-center justify-between h-12 px-3 font-semibold">
+                <span class="truncate text-white px-5">Apa saja</span>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="max-h-0 duration-300 group-focus:max-h-40">
+                <h1 class="inline-block focus:flex items-center text-left px-8 py-4 text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum maxime recusandae eum velit deserunt tempora asperiores aspernatur? Culpa, mollitia!
+                </h1>
+              </div>
+            </button>
+            <button class="group bg-button rounded-xl my-1 focus:bg-slate-800 hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out" data-aos="zoom-in-right">
+              <div class="flex items-center justify-between h-12 px-3 font-semibold">
+                <span class="truncate text-white px-5">Bagaimana </span>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="max-h-0 duration-300 group-focus:max-h-40">
+                <h1 class="inline-block focus:flex items-center text-left px-8 py-4 text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum maxime recusandae eum velit deserunt tempora asperiores aspernatur? Culpa, mollitia!
+                </h1>
+              </div>
+            </button>
+            <button class="group bg-button rounded-xl my-1 focus:bg-slate-800 hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out" data-aos="zoom-in-right">
+              <div class="flex items-center justify-between h-12 px-3 font-semibold">
+                <span class="truncate text-white px-5">Bagaimana </span>
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="max-h-0 duration-300 group-focus:max-h-40">
+                <h1 class="inline-block focus:flex items-center text-left px-8 py-4 text-base text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum maxime recusandae eum velit deserunt tempora asperiores aspernatur? Culpa, mollitia!
+                </h1>
+              </div>
+            </button>
+        
+            <!-- List Ends -->                   
+          </div>
+          <!-- Accordion End  -->       
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="">
+  <div class="container lg:mt-0 mt-24 flex flex-wrap justify-center bg-green-500 hover:shadow-lg hover:bg-green-700 hover:text-black hover:bg-opacity-80 transition duration-300 ease-in-out  rounded-xl">
+        <div class="w-[40px] flex"><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg></div>
+        <div class="flex">
+        <h1 class="z-50 font-extrabold uppercase text-white text-2xl lg:text-3xl text-center py-3 px-8">HUBUNGI ADMIN AL-KHOIR</h1>
+        </div>
+  </div>
+  </a>
+ </section>
+<!-- About Section Ends -->
+
+<!-- Blog Section Start -->
+  <section id="blog" class="pt-16 pb-32 w-full bg-slate-200 px-12">
+    <div class="flex flex-wrap">
+      <div class="w-full">
+        <div class="max-w-xl mx-auto text-center mb-16">
+          <h4 class="font-semibold text-sm text-secondary my-4">BERITA</h4>
+          <h2 class="font-extrabold text-primary text-3xl mb-4 sm:text-4xl lg:text-5xl">Aktivitas Al-Khoir</h2>
+          <p class="text-slate-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum nobis dicta veritatis quas fugit laudantium?</p>
+        </div>
+      </div>
+
+      <div class="container pb-2">
+        <div class="flex flex-wrap bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="w-full self-center lg:w-1/2">
+         <img src="https://source.unsplash.com/400x200/?{{ $posts[0]->category->name }}" alt="" class="lg:h-96 w-full">
+        </div>
+        <div class="px-7 lg:w-1/2 lg:py-8 py-0">
+          <a href="/posts/{{ $posts[0]->slug }}"><h3 class="block text-secondary font-semibold text-sm leading-relaxed lg:font-extrabold lg:text-2xl py-4 hover:text-button">
+            Judul Test
+          </h3>
+          </a>
+          <p class="hidden lg:inline-block text-gray-400 font-medium text-sm mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error excepturi autem quisquam aspernatur assumenda ea tempore ex sint repellendus rerum, culpa facere, quae mollitia cum sed ab similique vitae.
+          </p>
+          <a href="#" class="hidden lg:inline-block text-base font-semibold text-button border-b-2 border-b-button mt-8 py-2 px-4 hover:shadow-lg hover:bg-button hover:text-white hover:bg-opacity-80 transition duration-300 ease-in-out">
+            Baca Selengkapnya
+          </a>
+        </div>
+       </div>
+      </div>
+
+      <div class="container pt-0 lg:pt-2">
+        <div class="flex flex-col lg:flex-row gap-x-4 gap-y-2">
+          <div class="flex flex-wrap bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="lg:w-full flex w-1/3 h-24 lg:h-64">
+             <img src="https://source.unsplash.com/400x200/" class="h-40 lg:h-full w-full">
+            </div>
+            <span class="px-5 flex lg:w-full w-1/2">
+              <a href="/posts/{{ $posts[1]->slug }}"><h3 class="block text-secondary text-xs font-bold lg:text-lg py-4 hover:text-button">
+                Judul 1
+              </h3>
+              </a>
+            </span>
+          </div>
+          <div class="flex flex-wrap bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="lg:w-full flex w-1/3 h-24 lg:h-64">
+             <img src="https://source.unsplash.com/400x200/" class="h-40 lg:h-full w-full">
+            </div>
+            <span class="px-5 flex lg:w-full w-1/2">
+              <a href="/posts/{{ $posts[2]->slug }}"><h3 class="block text-secondary text-xs font-bold lg:text-lg py-4 hover:text-button">
+                Judul 2
+              </h3>
+              </a>
+            </span>
+          </div>
+          <div class="flex flex-wrap bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="lg:w-full flex w-1/3 h-24 lg:h-64">
+             <img src="https://source.unsplash.com/400x200/" class="h-40 lg:h-full w-full">
+            </div>
+            <span class="px-5 flex lg:w-full w-1/2">
+              <a href="/posts/{{ $posts[3]->slug }}"><h3 class="block text-secondary text-xs font-bold lg:text-lg py-4 hover:text-button">
+                Judul 3
+              </h3>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+        
+        <div class="container lg:pt-7 pt-12 flex justify-center">
+          <a href="#" class="text-base font-semibold text-white bg-button mt-8 py-2 px-12 hover:shadow-lg hover:bg-button hover:text-white hover:bg-opacity-80 transition duration-300 ease-in-out">
+            Baca Lainnya..
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+<!-- Blog Section Ends -->
+
+<!-- Apa kata mereka starts -->
+      <div class="flex items-center justify-center py-5 px-12">
+          <div class="w-full bg-white px-5 py-16 md:py-24 text-gray-800">
+              <div class="w-full max-w-6xl mx-auto">
+                  <div class="text-center max-w-xl mx-auto">
+                    <div class="absolute lg:right-20 lg:left-20 lg:mt-4">
+                      <h1 class="font-extrabold text-[200px] -z-10 text-button opacity-30">?</h1>
+                    </div>
+                      <h1 class="text-5xl font-extrabold mb-5 text-primary text-center">Apa Kata<br>Mereka</h1>
+                       <div class="text-center mb-10">
+                          <span class="inline-block w-2 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                          <span class="inline-block w-6 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                          <span class="inline-block w-20 h-1 rounded-full bg-indigo-500"></span>
+                          <span class="inline-block w-6 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                          <span class="inline-block w-2 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                      </div>
+                  </div>
+                  <div class="-mx-3 md:flex items-start">
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=1" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Kenzie Edgar.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=2" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Stevie Tifft.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=3" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Tommie Ewart.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=4" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Charlie Howse.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=5" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Nevada Herbertson.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <img src="https://i.pravatar.cc/100?img=6" alt="">
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Kris Stanton.</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- Apa kata mereka ends -->
+
+<!-- Footer Starts -->
+<!-- <section class="bg-primary h-[400px]">
+  <div class="flex flex-wrap pt-20 justify-center container">
+    <div class="flex flex-row">
+      <div class="w-[240px]">
+      <img src="https://source.unsplash.com/150x150?building" alt="" class="text-center">
+    </div>
+    <div class="w-[400px]">
+      <h1 class="text-lg font-bold">Alamat</h1>
+      <p>Jl. Gunuk I No. 23A RT 001/RW003, Pejaten Timur, Pasar Minggu, Jakarta Selatan, DKI Jakarta. Belakang SDN 05 Pejaten Timur</p>
+    </div>
+    </div>
+
+  </div>
+</section> -->
+<!-- Footer Ends -->
+
+
+<!-- Script Start -->
+<script>
+    // Burger menus
+document.addEventListener("DOMContentLoaded", function () {
+    // open
+    const burger = document.querySelectorAll(".navbar-burger");
+    const menu = document.querySelectorAll(".navbar-menu");
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle("hidden");
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll(".navbar-close");
+    const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle("hidden");
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle("hidden");
+                }
+            });
+        }
+    }
+});
+// Burger Ends
+
+</script>
+<script src="../path/to/flowbite/dist/flowbite.js"></script>
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Scripts ends -->
+  </body>
+</html>
