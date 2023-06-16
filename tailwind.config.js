@@ -8,9 +8,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#0f4c82",
-        secondary: "#0f172a",
-        button: "#f59e0b",
+        primary: "#1E9ADF",
+        secondary: "#F1F2F6",
+        button: "#FFC100",
+        hoverb: "#33D951",
       },
       screens: {
         "2xl": "1320px",
