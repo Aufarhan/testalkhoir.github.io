@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
-      sans: ["Open Sans"],
+      serif: ["Rubik"],
     },
     container: {
       center: true,
