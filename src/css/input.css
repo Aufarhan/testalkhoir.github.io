@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 /* Slider */
+.logo {
+  font-family: "Baloo 2", cursive;
+}

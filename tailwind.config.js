@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./index.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
+    fontFamily: {
+      sans: ["Open Sans"],
+    },
     container: {
       center: true,
       padding: "16px",
@@ -10,6 +13,8 @@ module.exports = {
       colors: {
         primary: "#1E9ADF",
         secondary: "#F1F2F6",
+        hitam: "#212121",
+        buttonh: "#33D951",
         button: "#FFC100",
         hoverb: "#33D951",
       },
