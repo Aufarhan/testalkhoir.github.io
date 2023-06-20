@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
-      serif: ["Rubik"],
+      serif: ["Lato"],
     },
     container: {
       center: true,
@@ -14,9 +14,9 @@ module.exports = {
         primary: "#1E9ADF",
         secondary: "#F1F2F6",
         hitam: "#212121",
-        buttonh: "#33D951",
-        button: "#FFC100",
-        hoverb: "#33D951",
+        buttonh: "#00a550",
+        button: "#1E9ADF",
+        hoverb: "#FFC100",
       },
       screens: {
         "2xl": "1320px",
