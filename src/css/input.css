@@ -10,3 +10,71 @@
 body {
   font-family: "Lato", sans-serif;
 }
+
+/* Flickity Carousel */
+* {
+  box-sizing: border-box;
+}
+/* HP */
+.carousel-cell {
+  width: 40%;
+  height: 140px;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+  .carousel-cell {
+    height: 200px;
+    width: 20%;
+  }
+}
+
+.carousel-cell:before {
+  display: block;
+  opacity: 0;
+  text-align: center;
+  content: counter(carousel-cell);
+}
+
+/* Hamburger */
+.hamburger1 {
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  z-index: 120;
+}
+
+.hamburger1 div {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
