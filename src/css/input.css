@@ -1,14 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+2:wght@400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Slider */
 .logo {
   font-family: "Baloo 2", cursive;
 }
 
+header {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   font-family: "Lato", sans-serif;
+}
+
+.arab {
+  font-family: "Amiri", serif;
 }
 
 /* Flickity Carousel */
@@ -16,26 +25,41 @@ body {
   box-sizing: border-box;
 }
 /* HP */
-.carousel-cell {
+.carousel-program {
   width: 40%;
   height: 140px;
   margin-right: 10px;
-  counter-increment: carousel-cell;
+  counter-increment: carousel-program;
 }
 
 /* PC */
 @media screen and (min-width: 768px) {
-  .carousel-cell {
+  .carousel-program {
     height: 200px;
     width: 20%;
   }
 }
 
-.carousel-cell:before {
+/* HP */
+.carousel-hero {
+  width: 100%;
+  height: 540px;
+  counter-increment: carousel-hero;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+  .carousel-hero {
+    height: 540px;
+    width: 100%;
+  }
+}
+
+.carousel-program:before {
   display: block;
   opacity: 0;
   text-align: center;
-  content: counter(carousel-cell);
+  content: counter(carousel-program);
 }
 
 /* Hamburger */
@@ -78,3 +102,299 @@ body {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+/* Hamburger Ends */
+
+/* ==========================================================================
+Animation System by Neale Van Fleet from Rogue Amoeba
+========================================================================== */
+.animate {
+  animation-duration: 0.75s;
+  animation-delay: 0.02s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+/* Fade In */
+.animate.fade {
+  animation-name: animate-fade;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Pop In */
+.animate.pop {
+  animation-name: animate-pop;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Blur In */
+.animate.blur {
+  animation-name: animate-blur;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-blur {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+/* Glow In */
+.animate.glow {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+/* Grow In */
+.animate.grow {
+  animation-name: animate-grow;
+}
+
+@keyframes animate-grow {
+  0% {
+    opacity: 0;
+    transform: scale(1, 0);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Splat In */
+.animate.splat {
+  animation-name: animate-splat;
+}
+
+@keyframes animate-splat {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) rotate(20deg) translate(0, -30px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1, 1.1) rotate(15deg);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1, 1.1) rotate(15deg) translate(0, -10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0) translate(0, 0);
+  }
+}
+
+/* Roll In */
+.animate.roll {
+  animation-name: animate-roll;
+}
+
+@keyframes animate-roll {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0deg);
+  }
+}
+
+/* Flip In */
+.animate.flip {
+  animation-name: animate-flip;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes animate-flip {
+  0% {
+    opacity: 0;
+    transform: rotateX(-120deg) scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1, 1);
+  }
+}
+
+/* Spin In */
+.animate.spin {
+  animation-name: animate-spin;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes animate-spin {
+  0% {
+    opacity: 0;
+    transform: rotateY(-120deg) scale(0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+}
+
+/* Slide In */
+.animate.slide {
+  animation-name: animate-slide;
+}
+
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Drop In */
+.animate.drop {
+  animation-name: animate-drop;
+  animation-timing-function: cubic-bezier(0.77, 0.14, 0.91, 1.25);
+}
+
+@keyframes animate-drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, -300px) scale(0.9, 1.1);
+  }
+  95% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0.9, 1.1);
+  }
+  96% {
+    opacity: 1;
+    transform: translate(10px, 0) scale(1.2, 0.9);
+  }
+  97% {
+    opacity: 1;
+    transform: translate(-10px, 0) scale(1.2, 0.9);
+  }
+  98% {
+    opacity: 1;
+    transform: translate(5px, 0) scale(1.1, 0.9);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(-5px, 0) scale(1.1, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+/* Animation Delays */
+.delay-1 {
+  animation-delay: 0.04s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+.delay-4 {
+  animation-delay: 0.9s;
+}
+.delay-5 {
+  animation-delay: 1.3s;
+}
+.delay-6 {
+  animation-delay: 1.6s;
+}
+.delay-7 {
+  animation-delay: 1.9s;
+}
+.delay-8 {
+  animation-delay: 2.2s;
+}
+.delay-9 {
+  animation-delay: 2.5s;
+}
+.delay-10 {
+  animation-delay: 2.8s;
+}
+.delay-11 {
+  animation-delay: 3.1s;
+}
+.delay-12 {
+  animation-delay: 3.4s;
+}
+.delay-13 {
+  animation-delay: 3.7s;
+}
+.delay-14 {
+  animation-delay: 4s;
+}
+.delay-15 {
+  animation-delay: 4.3s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate {
+    animation: none !important;
+  }
+}
+/* Animation Ends */
+
+.carouselText {
+  display: none;
+}
+
+.carousel-hero.is-selected .carouselText {
+  display: block;
+}
+
+/* .carouselHeroImg {
+  display: none;
+}
+
+.carousel-hero.is-selected .carouselHeroImg {
+  display: block;
+} */
