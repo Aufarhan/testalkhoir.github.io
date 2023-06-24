@@ -16,7 +16,10 @@
   </head>
   <!-- Navbar Starts -->
   <header class="w-full sticky top-0 z-50">
-    <nav class="relative lg:px-16 px-4 py-4 flex justify-between items-center bg-primary lg:shadow-none shadow-lg lg:border-b-0 border-b-2 border-slate-400">
+    <div id="bismillah" class="pt-3 pb-1 bg-slate-700">
+      <h1 class="text-secondary font-bold tracking-widest text-center">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ,</h1>
+    </div>
+    <nav class="relative md:px-16 px-4 py-4 flex justify-between items-center bg-primary md:shadow-none shadow-lg md:border-b-0 border-b-2 border-blue-800">
       <!-- Burger Starts -->
       <div class="lg:hidden block">
         <button id="navbar" class="navigation flex items-center rounded-xl text-secondary" role="navigation">
@@ -29,34 +32,34 @@
         </button>
       </div>
       <div class="navbar-menu relative z-50 hidden">
-        <div class="navbar-backdrop fixed inset-0 bg-black opacity-70"></div>
+        <div class="navbar fixed inset-0 bg-black opacity-70"></div>
         <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r border-blue-800 overflow-y-auto">
           <div class="flex items-center mb-20"></div>
           <div>
             <ul class="text-primary">
-              <li class="my-1">
-                <a class="block p-4 bg-secondary text-xs lg:text-sm font-semibold hover:bg-blue-50 rounded-lg" href="/">Beranda</a>
+              <li class="my-3">
+                <a class="block p-4 bg-secondary text-lg font-bold uppercase bg-opacity-20 text-secondary hover:bg-blue-50 rounded-lg shadow-lg" href="/">Beranda</a>
               </li>
-              <li class="my-1">
-                <a class="block p-4 bg-secondary text-xs lg:text-sm font-semibold hover:bg-blue-50 rounded-lg" href="/about">Aktivitas Sekolah</a>
+              <li class="my-3">
+                <a class="block p-4 bg-secondary text-lg font-bold uppercase bg-opacity-20 text-secondary hover:bg-blue-50 rounded-lg shadow-lg" href="/about">Aktivitas Sekolah</a>
               </li>
-              <li class="my-1">
-                <a class="block p-4 bg-secondary text-xs lg:text-sm font-semibold hover:bg-blue-50 rounded-lg" href="/posts">Informasi</a>
+              <li class="my-3">
+                <a class="block p-4 bg-secondary text-lg font-bold uppercase bg-opacity-20 text-secondary hover:bg-blue-50 rounded-lg shadow-lg" href="/posts">Informasi</a>
               </li>
-              <li class="my-1">
-                <a class="block p-4 bg-secondary text-xs lg:text-sm font-semibold hover:bg-blue-50 rounded-lg" href="/posts">Program</a>
+              <li class="my-3">
+                <a class="block p-4 bg-secondary text-lg font-bold uppercase bg-opacity-20 text-secondary hover:bg-blue-50 rounded-lg shadow-lg" href="/posts">Program</a>
               </li>
-              <li class="my-1">
-                <a class="block p-4 bg-secondary text-xs lg:text-sm font-semibold hover:bg-blue-50 rounded-lg" href="/posts">Artikel</a>
+              <li class="my-3">
+                <a class="block p-4 bg-secondary text-lg font-bold uppercase bg-opacity-20 text-secondary hover:bg-blue-50 rounded-lg shadow-lg" href="/posts">Artikel</a>
               </li>
             </ul>
           </div>
           <div class="mt-auto">
             <div class="pt-6 flex justify-center">
-              <a class="px-6 py-1 mb-3 leading-loose text-lgtext-center font-bold rounded-full shadow-md transition duration-200 bg-hoverb text-hitam" href="#">Masuk/Daftar</a>
+              <a class="px-10 py-1 mb-3 leading-loose text-mdtext-center font-bold rounded-full shadow-md transition duration-200 bg-hoverb text-hitam uppercase" href="#">Masuk/Daftar</a>
             </div>
-            <p class="my-4 text-xs text-center">
-              <span>Al Khoir Islamic Homeschooling © 2023</span>
+            <p class="my-4 text-xs text-center text-secondary">
+              <span>Copyright 2023 © Al Khoir Islamic School</span>
             </p>
           </div>
         </nav>
@@ -64,16 +67,20 @@
       <!-- Burger Ends -->
       <div>
         <a class="" href="/">
-          <div class="flex lg:justify-normal justify-center text-3xl font-bold leading-none lg:w-full w-[46px] lg:h-full h-[56px]">
-            <img src="./public/img/LogoOnlyWhite.png" alt="Logo" class="w-[46px] lg:w-[30px] h-[56px] lg:h-[46px]" />
-            <h1 logo class="lg:grid hidden content-center px-6 lg:text-3xl text-lg text-center font-bold text-secondary font-sans logo">AL KHOIR ISLAMIC SCHOOL</h1>
+          <div class="flex md:flex-row flex-col md:justify-normal justify-center text-3xl font-bold leading-none w-full md:h-full h-[56px]">
+            <div class="grid content-center justify-items-center">
+              <img src="./public/img/LogoOnlyWhite.png" alt="Logo" class="w-[32px] md:w-[30px] h-[48px] md:h-[46px]" />
+            </div>
+            <div class="grid content-center mt-2 md:mt-0">
+              <h1 logo class="grid content-center sm:px-4 px-6 md:text-xl lg:text-3xl text-xs text-center font-bold text-secondary font-sans logo">AL KHOIR ISLAMIC SCHOOL</h1>
+            </div>
           </div>
         </a>
       </div>
 
       <div class="lg:hidden flex">
         <a
-          class="right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-lg text-secondary"
+          class="right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-md text-secondary"
           href="https://wa.me/6283136152521?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh,%20saya%20mau%20nanya%20tentang%20sekolah%20Al%20Khoir"
           ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
             <path
@@ -86,7 +93,7 @@
       <div class="lg:flex hidden flex-row gap-x-1.5 my-auto">
         <div>
           <a
-            class="hidden lg:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-lg text-secondary"
+            class="hidden md:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-md text-secondary"
             href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
               <path
@@ -97,7 +104,7 @@
         </div>
         <div>
           <a
-            class="hidden lg:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-lg text-secondary"
+            class="hidden md:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-md text-secondary"
             href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
               <path
@@ -108,7 +115,7 @@
         </div>
         <div>
           <a
-            class="hidden lg:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-lg text-secondary"
+            class="hidden md:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-md text-secondary"
             href="#"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -117,17 +124,17 @@
               /></svg
           ></a>
         </div>
-        <div class="mx-3">
+        <div class="sm:mx-1 mx-3">
           <a
-            class="hidden text-secondary lg:inline-block py-1 px-3 text-base font-bold rounded-full border-2 border-secondary focus:border-button focus:bg-yellow-400 hover:shadow-lg hover:bg-hoverb hover:border-button transition duration-300 ease-in-out"
+            class="hidden text-secondary md:inline-block py-1 px-3 text-base font-bold rounded-full border-2 border-secondary focus:border-button focus:bg-yellow-400 hover:shadow-md hover:bg-hoverb hover:border-button transition duration-300 ease-in-out"
             href="#"
           >
-            MASUK / DAFTAR</a
+            MASUK/DAFTAR</a
           >
         </div>
         <div>
           <a
-            class="hidden lg:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-lg text-secondary"
+            class="hidden md:block right-0 border-2 border-secondary rounded-full py-1.5 px-1.5 focus:bg-yellow-400 focus:border-button hover:bg-hoverb hover:border-button transition duration-300 ease-in-out hover:shadow-md text-secondary"
             href="https://wa.me/6283136152521?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh,%20saya%20mau%20nanya%20tentang%20sekolah%20Al%20Khoir"
             ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
               <path
@@ -140,7 +147,7 @@
     </nav>
     <div class="bg-secondary py-2 w-full shadow-md border border-b-slate-300 lg:block hidden">
       <div class="flex flex-row justify-between text-center px-16">
-        <div class="flex flex-row w-2/5 pb-1">
+        <div class="flex flex-row w-3/4 pb-1">
           <div class="flex-shrink"><a href="" class="font-bold text-xs tracking-wider uppercase text-primary hover:text-primary transition ease-in duration-200">Beranda</a></div>
           <span class="px-5 text-slate-300 font-bold text-center">|</span>
           <div class="flex-shrink-0"><a href="" class="font-bold text-xs tracking-wider uppercase text-hitam hover:text-primary transition ease-in duration-200">Aktivitas Sekolah</a></div>
@@ -151,7 +158,7 @@
           <span class="px-5 text-slate-300 font-bold text-center">|</span>
           <div class="flex-shrink"><a href="" class="font-bold text-xs tracking-wider uppercase text-hitam hover:text-primary transition ease-in duration-200">Artikel</a></div>
         </div>
-        <div class="flex flex-row w-2/8 text-center">
+        <div class="flex flex-row justify-end w-1/4">
           <div>
             <a href="https://goo.gl/maps/2PQA1b9j38Lw5pEM7" target="_blank" class="font-bold text-sm text-gray-600 hover:text-primary transition ease-in duration-200">Jakarta, Indonesia</a>
           </div>
@@ -180,84 +187,84 @@
   <!-- Navbar Ends -->
   <body>
     <!-- Hero Section Start -->
-    <section id="Home" class="w-full px-0 bg-secondary -z-40 h-[920px] lg:h-[520px]">
+    <section id="Home" class="w-full px-0 bg-secondary -z-40 h-[920px] md:h-[520px]">
       <div data-aos="fade-up" data-carousel-interval="9000" id="default-carousel" class="static w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative lg:h-[540px] h-[540px] overflow-hidden">
+        <div class="relative md:h-[420px] lg:h-[540px] h-[540px] overflow-hidden">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header0.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header0.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header1.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header1.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header2.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header2.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header3.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header3.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 5 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header4.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header4.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 6 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header5.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header5.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
           <!-- Item 7 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./public/img/Header6.jpg" class="brightness-[.70] absolute block lg:w-full lg:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 lg:top-[210px] top-48 left-1/2">
+            <img src="./public/img/Header6.jpg" class="brightness-[.70] absolute block md:w-full md:h-max max-w-none h-[760px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute flex justify-center -translate-x-1/2 -translate-y-1/2 md:top-[210px] top-48 left-1/2">
               <div class="flex flex-col text-center justify-center">
                 <h3 class="text-white text-base font-medium">WELCOME TO</h3>
                 <h1 class="text-center text-white font-black text-7xl uppercase pt-1">Al Khoir</h1>
-                <h3 class="text-white text-2xl font-medium">Islamic Homeschooling</h3>
+                <h3 class="text-white text-2xl font-medium">Islamic School</h3>
               </div>
             </div>
           </div>
@@ -271,17 +278,17 @@
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
         </div> -->
         <!-- Slider controls -->
-        <button type="button" class="absolute left-0 z-30 flex items-center justify-center h-[520px] top-[120px] px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full lg:w-10 lg:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/80 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="absolute left-0 z-30 flex items-center justify-center h-[520px] md:top-[40px] top-[120px] px-4 cursor-pointer group focus:ring-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full md:w-10 md:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/80 group-focus:ring-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
             <span class="sr-only">Previous</span>
           </span>
         </button>
-        <button type="button" class="absolute right-0 z-30 flex items-center justify-center h-[520px] top-[120px] px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full lg:w-10 lg:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/80 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="absolute right-0 z-30 flex items-center justify-center h-[520px] md:top-[40px] top-[120px] px-4 cursor-pointer group focus:ring-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full md:w-10 md:h-10 bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/80 group-focus:ring-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
             <span class="sr-only">Next</span>
@@ -292,9 +299,9 @@
     <!-- Hero Section Ends -->
 
     <!-- Hero Box Start -->
-    <div class="absolute lg:mt-0 mt-28 h-[400px] py-40 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex lg:flex-row flex-col gap-y-8 lg:gap-x-6 container justify-center z-20">
+    <div class="absolute md:mt-0 mt-36 h-[400px] py-40 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex md:flex-row flex-col gap-y-8 md:gap-x-6 container justify-center z-20 flex-shrink">
       <!-- List Starts -->
-      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] lg:w-[400px] h-[380px] py-7 flex-shrink-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] md:w-[400px] h-max py-7" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
         <h3 class="font-medium text-base px-8">Selamat datang di</h3>
         <h1 class="px-8 mb-4 text-xl font-bold uppercase">Al Khoir Official Website</h1>
         <div class="px-8 text-hitam">
@@ -382,14 +389,14 @@
             <hr class="h-px my-2 bg-gray-300 border-0" />
           </div>
         </div>
-        <div class="py-1 px-2 my-8 bg-red-600 rounded-sm shadow-md">
+        <div class="py-1 px-2 bg-red-600 rounded-sm shadow-md my-5 lg:my-8">
           <h1 class="text-center text-white font-bold">PENDAFTARAN MASIH DIBUKA !</h1>
         </div>
         <a href="https://wa.me/6283136152521?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh,%20saya%20mau%20nanya%20tentang%20sekolah%20Al%20Khoir">
-          <button class="flex mx-auto text-center bg-buttonh hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 py-2 my-4 rounded-full text-white font-bold">Daftar Sekarang</button>
+          <button class="flex mt-auto mx-auto text-center bg-buttonh hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 md:px-4 lg:px-14 py-2 my-2 rounded-full text-white font-bold uppercase">Daftar Sekarang</button>
         </a>
       </div>
-      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] lg:w-[400px] h-[380px] py-7 flex-shrink-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] md:w-[400px] h-max py-7" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
         <div class="flex flex-col text-center justify-center pb-3">
           <div class="flex justify-center">
             <img src="./public/img/CameraIcon.png" alt="" class="w-1/5" />
@@ -483,9 +490,9 @@
             <hr class="h-px my-2 bg-gray-300 border-0" />
           </div>
         </div>
-        <button class="flex mx-auto text-center bg-button hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 py-2 my-4 rounded-full text-white font-bold mt-8">Aktivitas Lainnya</button>
+        <button class="flex mx-auto text-center bg-button hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 md:px-4 lg:px-14 py-2 mt-7 mb-1 rounded-full text-white font-bold uppercase">Aktivitas Lainnya</button>
       </div>
-      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] lg:w-[400px] h-[380px] py-7 flex-shrink-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+      <div class="bg-slate-50 border text-hitam border-slate-200 shadow-md rounded-[50px] md:w-[400px] h-max py-7" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
         <div class="flex flex-col text-center justify-center pb-3">
           <div class="flex justify-center">
             <img src="./public/img/NotepadIcon.png" alt="" class="w-1/5" />
@@ -579,22 +586,24 @@
             <hr class="h-px my-2 bg-gray-300 border-0" />
           </div>
         </div>
-        <button class="flex mx-auto text-center bg-button hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 py-2 my-4 rounded-full text-white font-bold mt-8">Lihat Program</button>
+        <button class="flex mx-auto text-center bg-button hover:bg-hoverb hover:text-hitam transition ease-in-out duration-150 px-14 md:px-4 lg:px-14 py-2 mt-7 mb-1 rounded-full text-white font-bold uppercase">Lihat Program</button>
       </div>
       <!-- List Ends -->
     </div>
-    <div class="lg:py-[170px] py-[360px] bg-secondary"></div>
+    <div class="lg:py-[180px] md:py-[270px] py-[380px] bg-secondary"></div>
     <!-- Hero Box Ends -->
 
     <!-- Carousel starts -->
-    <section id="Carousel" class="pb-9 w-full bg-secondary pt-9">
-      <div class="bg-white lg:container w-[375px] mx-auto lg:py-4 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
+    <section id="Carousel" class="py-9 w-full bg-secondary">
+      <div class="bg-white md:container w-[375px] mx-auto md:py-4 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
+        <h1 class="mt-4 font-black uppercase text-left text-4xl text-primary/40 md:px-4 px-7">PROGRAM</h1>
+        <h1 class="font-bold text-left md:text-xl text-base text-hitam md:px-4 px-7">Program-program yang disediakan</h1>
         <!-- Carousel Starts -->
-        <div class="carousel overflow-hidden rounded-lg mt-2" data-flickity='{ "groupCells": true, "wrapAround": true }' data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="carousel overflow-hidden rounded-md mt-2" data-flickity='{ "groupCells": true, "wrapAround": true }' data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="carousel-cell">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Homeschooling</h1>
@@ -603,8 +612,8 @@
           </div>
           <div class="carousel-cell">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Ujian Kesetaraan.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Ujian Kesetaraan.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Ujian Kesetaraan</h1>
@@ -613,8 +622,8 @@
           </div>
           <div class="carousel-cell">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Tahsin & Tahfiz.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Tahsin & Tahfiz.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Tahsin & Tahfizh</h1>
@@ -623,8 +632,8 @@
           </div>
           <div class="carousel-cell">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Stiffin Test.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Stiffin Test.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">STIFFIn Test</h1>
@@ -633,48 +642,48 @@
           </div>
           <div class="carousel-cell">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Cambridge.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Cambridge.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Cambridge Exam</h1>
               </div>
             </div>
           </div>
-          <div class="carousel-cell">
+          <div class="carousel-cell invisible">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Homeschooling</h1>
               </div>
             </div>
           </div>
-          <div class="carousel-cell hidden">
+          <div class="carousel-cell invisible">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Homeschooling</h1>
               </div>
             </div>
           </div>
-          <div class="carousel-cell hidden">
+          <div class="carousel-cell invisible">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Homeschooling</h1>
               </div>
             </div>
           </div>
-          <div class="carousel-cell hidden">
+          <div class="carousel-cell invisible">
             <div class="group grid grid-rows-2 justify-items-center text-center">
-              <div class="outline outline-offset-2 outline-primary overflow-hidden rounded-full">
-                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink lg:w-36 w-20" />
+              <div class="ring ring-offset-2 ring-primary overflow-hidden rounded-full">
+                <img src="./public/img/Homeschooling.png" alt="" class="group-hover:scale-125 transition ease-in-out duration-200 flex flex-shrink md:w-36 w-20" />
               </div>
               <div class="pt-2">
                 <h1 class="text-hitam font-semibold">Homeschooling</h1>
@@ -683,10 +692,10 @@
           </div>
         </div>
         <!-- Carousel Ends -->
-        <div class="container px-5 my-5">
+        <div class="container px-5 my-6">
           <a href=""
             ><h1
-              class="font-black uppercase text-white text-[14px] lg:text-xl text-center lg:w-[520px] justify-center mx-auto bg-button hover:shadow-lg hover:bg-hoverb hover:text-black transition duration-150 ease-in-out py-2 px-3 rounded-full"
+              class="font-black uppercase text-white text-[14px] md:text-xl text-center md:w-[520px] justify-center mx-auto bg-button hover:shadow-md hover:bg-hoverb hover:text-black transition duration-150 ease-in-out py-2 px-3 rounded-full"
             >
               Penerimaan Siswa Baru / Pindahan
             </h1></a
@@ -698,16 +707,16 @@
 
     <!-- Pertanyaan Section Start -->
     <section id="Pertanyaan" class="pt-2 pb-12 w-full bg-secondary">
-      <div class="bg-white lg:container w-[375px] mx-auto lg:pt-4 lg:pb-8 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
+      <div class="bg-white md:container w-[375px] mx-auto md:pt-4 md:pb-8 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
         <!-- Accordion Start -->
-        <h1 class="mt-4 font-black uppercase text-left text-7xl text-primary lg:px-4 px-7">FAQ</h1>
-        <h1 class="font-bold uppercase text-left lg:text-xl text-base text-hitam lg:px-4 px-7">Pertanyaan yang sering ditanyakan</h1>
+        <h1 class="mt-4 font-black uppercase text-left text-7xl text-primary/40 md:px-4 px-7">FAQ</h1>
+        <h1 class="font-bold text-left md:text-xl text-base text-hitam md:px-4 px-7">Pertanyaan yang sering ditanyakan</h1>
         <!-- List Start -->
         <div class="px-12 pt-4">
           <div class="flex justify-center items-start my-2">
             <div class="w-full my-1">
               <ul class="flex flex-col gap-y-3">
-                <li data-aos-delay="200" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(1)">
+                <li data-aos-delay="100" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(1)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Ini sekolah sunnah bukan ya?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -723,7 +732,7 @@
                     </p>
                   </div>
                 </li>
-                <li data-aos-delay="300" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(2)">
+                <li data-aos-delay="100" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(2)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Manhaj Al Khoir apa ya?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -739,7 +748,7 @@
                     </p>
                   </div>
                 </li>
-                <li data-aos-delay="400" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(3)">
+                <li data-aos-delay="100" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(3)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Ustadz pembimbing siapa?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -752,7 +761,7 @@
                     <p class="p-3 text-hitam">Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation</p>
                   </div>
                 </li>
-                <li data-aos-delay="500" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(4)">
+                <li data-aos-delay="200" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(4)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Pelajaran Diniyah berapa persen?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -765,7 +774,7 @@
                     <p class="p-3 text-hitam">Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation</p>
                   </div>
                 </li>
-                <li data-aos-delay="600" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(5)">
+                <li data-aos-delay="300" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(5)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Kelas akhwat dan ikhwan terpisah ga?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -778,7 +787,7 @@
                     <p class="p-3 text-hitam">Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation</p>
                   </div>
                 </li>
-                <li data-aos-delay="700" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-lg text-white" x-data="accordion(6)">
+                <li data-aos-delay="400" data-aos="zoom-out-down" class="bg-primary rounded-3xl py-2 px-4 shadow-md text-white" x-data="accordion(6)">
                   <h2 @click="handleClick()" class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
                     <span>Target hafalan?</span>
                     <svg :class="handleRotate()" class="fill-current text-secondary h-6 w-6 transform transition-transform duration-500" viewBox="0 0 20 20">
@@ -820,7 +829,7 @@
         </script>
         <!-- List Ends -->
         <a href="https://wa.me/6283136152521?text=Assalamu%27alaikum%20warahmatullahi%20wabarakatuh,%20saya%20mau%20nanya%20tentang%20sekolah%20Al%20Khoir">
-          <div class="flex flex-row justify-center w-[275px] bg-buttonh hover:shadow-lg hover:bg-hoverb hover:text-black transition duration-150 ease-in-out ml-12 px-3 py-2 rounded-full text-white mt-8 mb-9">
+          <div class="flex flex-row justify-center w-[275px] bg-buttonh hover:shadow-md hover:bg-hoverb hover:text-black transition duration-150 ease-in-out ml-12 px-3 py-2 rounded-full text-white mt-9 mb-4">
             <div class="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                 <path
@@ -838,19 +847,19 @@
 
     <!-- Blog Section Start -->
     <section id="Blog" class="w-full bg-secondary pb-14">
-      <div class="bg-white lg:container w-[375px] mx-auto lg:pt-6 lg:pb-8 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
-        <div class="container flex flex-wrap lg:gap-16 gap-6 justify-center py-8">
-          <div class="w-2/5">
+      <div class="bg-white md:container w-[375px] mx-auto md:pt-6 md:pb-8 py-2 rounded-3xl border-2 border-slate-200 shadow-md">
+        <div class="container md:flex md:flex-wrap grid justify-items-center md:gap-16 gap-6 py-8 justify-center">
+          <div class="md:w-2/5 w-full">
             <a href="b">
-              <div class="overflow-hidden aspect-video cursor-pointer rounded-lg outline outline-offset-4 outline-primary relative group">
+              <div class="overflow-hidden aspect-video cursor-pointer rounded-md ring ring-offset-4 ring-primary relative group">
                 <div
-                  class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/90 via-black/70 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  class="rounded-xl z-10 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/90 via-black/70 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
                 >
                   <div>
                     <div class="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                      <div class="font-bold lg:text-lg text-sm">Aktivitas 1 Test</div>
+                      <div class="font-bold md:text-md text-sm">Aktivitas 1 Test</div>
 
-                      <div class="text-gray-200 text-sm lg:block hidden">
+                      <div class="text-gray-200 text-sm md:block hidden">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores error iure, perferendis sequi totam. Ad aliquam aperiam atque deleniti dolor dolorem enim esse et in, inventore itaque, pariatur
                         reprehenderit.
                       </div>
@@ -861,17 +870,17 @@
               </div>
             </a>
           </div>
-          <div class="w-2/5">
+          <div class="md:w-2/5 w-full">
             <a href="b">
-              <div class="overflow-hidden aspect-video cursor-pointer rounded-lg outline outline-offset-4 outline-primary relative group">
+              <div class="overflow-hidden aspect-video cursor-pointer rounded-md ring ring-offset-4 ring-primary relative group">
                 <div
-                  class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  class="rounded-xl z-10 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
                 >
                   <div>
                     <div class="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                      <div class="font-bold lg:text-lg text-sm">Aktivitas 1 Test</div>
+                      <div class="font-bold md:text-md text-sm">Aktivitas 1 Test</div>
 
-                      <div class="text-gray-200 text-sm lg:block hidden">
+                      <div class="text-gray-200 text-sm md:block hidden">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores error iure, perferendis sequi totam. Ad aliquam aperiam atque deleniti dolor dolorem enim esse et in, inventore itaque, pariatur
                         reprehenderit.
                       </div>
@@ -882,17 +891,17 @@
               </div>
             </a>
           </div>
-          <div class="w-2/5">
+          <div class="md:w-2/5 w-full">
             <a href="b">
-              <div class="overflow-hidden aspect-video cursor-pointer rounded-lg outline outline-offset-4 outline-primary relative group">
+              <div class="overflow-hidden aspect-video cursor-pointer rounded-md ring ring-offset-4 ring-primary relative group">
                 <div
-                  class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  class="rounded-xl z-10 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
                 >
                   <div>
                     <div class="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                      <div class="font-bold lg:text-lg text-sm">Aktivitas 1 Test</div>
+                      <div class="font-bold md:text-md text-sm">Aktivitas 1 Test</div>
 
-                      <div class="text-gray-200 text-sm lg:block hidden">
+                      <div class="text-gray-200 text-sm md:block hidden">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores error iure, perferendis sequi totam. Ad aliquam aperiam atque deleniti dolor dolorem enim esse et in, inventore itaque, pariatur
                         reprehenderit.
                       </div>
@@ -903,17 +912,17 @@
               </div>
             </a>
           </div>
-          <div class="w-2/5">
+          <div class="md:w-2/5 w-full">
             <a href="b">
-              <div class="overflow-hidden aspect-video cursor-pointer rounded-lg outline outline-offset-4 outline-primary relative group">
+              <div class="overflow-hidden aspect-video cursor-pointer rounded-md ring ring-offset-4 ring-primary relative group">
                 <div
-                  class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
+                  class="rounded-xl z-10 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 via-black/90 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
                 >
                   <div>
                     <div class="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
-                      <div class="font-bold lg:text-lg text-sm">Aktivitas 1 Test</div>
+                      <div class="font-bold md:text-md text-sm">Aktivitas 1 Test</div>
 
-                      <div class="text-gray-200 text-sm lg:block hidden">
+                      <div class="text-gray-200 text-sm md:block hidden">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores error iure, perferendis sequi totam. Ad aliquam aperiam atque deleniti dolor dolorem enim esse et in, inventore itaque, pariatur
                         reprehenderit.
                       </div>
@@ -925,10 +934,10 @@
             </a>
           </div>
         </div>
-        <div class="container px-5 my-5">
+        <div class="container px-5 mt-5 mb-2">
           <a href=""
             ><h1
-              class="font-black uppercase text-white text-sm lg:text-xl text-center lg:w-[520px] w-[275px] justify-center mx-auto bg-button hover:shadow-lg hover:bg-hoverb hover:text-black transition duration-150 ease-in-out py-2 rounded-full"
+              class="font-black uppercase text-white text-sm md:text-xl text-center md:w-[520px] w-[275px] justify-center mx-auto bg-button hover:shadow-md hover:bg-hoverb hover:text-black transition duration-150 ease-in-out py-2 rounded-full"
             >
               Aktivitas Al Khoir
             </h1></a
@@ -940,10 +949,10 @@
 
     <!-- Apa kata mereka starts -->
     <!-- <div class="flex items-center justify-center py-5 px-12">
-          <div class="w-full bg-white px-5 py-16 lg:py-24 text-gray-800">
+          <div class="w-full bg-white px-5 py-16 md:py-24 text-gray-800">
               <div class="w-full max-w-6xl mx-auto">
                   <div class="text-center max-w-xl mx-auto">
-                    <div class="absolute lg:right-20 lg:left-20 lg:mt-4">
+                    <div class="absolute md:right-20 md:left-20 md:mt-4">
                       <h1 class="font-black text-[200px] -z-10 text-button opacity-30">?</h1>
                     </div>
                       <h1 class="text-5xl font-black mb-5 text-primary text-center">Apa Kata<br>Mereka</h1>
@@ -955,8 +964,8 @@
                           <span class="inline-block w-2 h-1 rounded-full bg-indigo-500 ml-1"></span>
                       </div>
                   </div>
-                  <div class="-mx-3 lg:flex items-start">
-                      <div class="px-3 lg:w-1/3">
+                  <div class="-mx-3 md:flex items-start">
+                      <div class="px-3 md:w-1/3">
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                               <div class="w-full flex mb-4 items-center">
                                   <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
@@ -967,7 +976,7 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -980,11 +989,11 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                       </div>
-                      <div class="px-3 lg:w-1/3">
+                      <div class="px-3 md:w-1/3">
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                               <div class="w-full flex mb-4 items-center">
                                   <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
@@ -995,7 +1004,7 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -1008,11 +1017,11 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                       </div>
-                      <div class="px-3 lg:w-1/3">
+                      <div class="px-3 md:w-1/3">
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                               <div class="w-full flex mb-4 items-center">
                                   <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
@@ -1023,7 +1032,7 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                           <div class="w-full mx-auto rounded-full bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -1036,7 +1045,7 @@
                                   </div>
                               </div>
                               <div class="w-full">
-                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                  <p class="text-sm leading-tight"><span class="text-md leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-md leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                               </div>
                           </div>
                       </div>
@@ -1050,11 +1059,11 @@
 
     <footer class="bg-primary text-secondary">
       <div class="mx-auto w-full max-w-screen-xl p-4 pt-12 pb-6">
-        <div class="lg:flex lg:justify-between flex flex-row justify-between gap-x-3">
-          <div class="lg:w-1/3 w-1/2">
+        <div class="md:flex md:justify-between flex flex-row justify-between gap-x-3">
+          <div class="md:w-1/3 w-1/2">
             <div>
-              <h2 class="lg:mb-4 mb-2 text-base font-bold uppercase">Ikuti Kami</h2>
-              <ul class="font-medium">
+              <h2 class="md:mb-4 mb-2 text-base font-bold uppercase">Ikuti Kami</h2>
+              <ul class="font-medium text-sm md:text-base">
                 <li class="my-1">
                   <a href="/" class="hover:underline">
                     <div class="flex flex-row items-center">
@@ -1147,25 +1156,25 @@
             </div>
           </div>
 
-          <div class="mb-6 lg:w-1/3 w-1/2 grid justify-items-center px-2 lg:border-0 border-l-2 border-blue-400">
+          <div class="mb-6 md:w-1/3 w-1/2 grid justify-items-center px-2 md:border-0 border-l-2 border-blue-400">
             <a href="/">
-              <div class="flex flex-col items-center lg:w-full">
-                <div class="flex lg:items-center items-start">
-                  <img src="./public/img/LogoOnlyWhite.png" class="lg:w-32 w-10" alt="Logo" />
+              <div class="flex flex-col items-center md:w-full">
+                <div class="flex md:items-center items-start">
+                  <img src="./public/img/LogoOnlyWhite.png" class="md:w-32 w-10" alt="Logo" />
                 </div>
-                <div class="lg:my-8 my-3 mx-3 flex flex-col">
+                <div class="md:my-8 my-3 mx-3 flex flex-col">
                   <div>
-                    <h1 class="logo text-center text-3xl lg:text-5xl font-black whitespace-nowrap">Al Khoir</h1>
+                    <h1 class="logo text-center text-3xl md:text-5xl font-black whitespace-nowrap">Al Khoir</h1>
                   </div>
                   <div>
-                    <h3 class="lg:text-4xl text-lg font-normal">Islamic School</h3>
+                    <h3 class="md:text-4xl text-md font-normal">Islamic School</h3>
                   </div>
                 </div>
               </div>
             </a>
           </div>
 
-          <div class="lg:w-1/3 hidden lg:flex flex-col text-right font-medium">
+          <div class="md:w-1/3 hidden md:flex flex-col text-right font-medium">
             <div>
               <h3>"Jika seorang manusia mati, maka terputuslah darinya semua amalnya kecuali dari tiga hal: dari sedekah jariyah atau ilmu yang diambil manfaatnya atau anak shalih yang mendoakannya."</h3>
             </div>
@@ -1174,12 +1183,12 @@
             </div>
           </div>
         </div>
-        <div class="lg:hidden mt-4 grid text-center justify-items-center">
+        <div class="md:hidden mt-4 grid text-center justify-items-center">
           <h3>"Jika seorang manusia mati, maka terputuslah darinya semua amalnya kecuali dari tiga hal: dari sedekah jariyah atau ilmu yang diambil manfaatnya atau anak shalih yang mendoakannya."</h3>
           <h2 class="font-bold tracking-wider">(HR Muslim no. 1631)</h2>
         </div>
       </div>
-      <div class="text-center w-full bg-blue-800 py-5">
+      <div class="text-center w-full bg-slate-700 py-5">
         <span class="text-sm text-secondary text-center">Copyright 2023 © <a href="/" class="hover:underline">Al-khoir Islamic School</a></span>
       </div>
     </footer>

@@ -11,11 +11,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#1E9ADF",
+        primary: "#0f4c82",
         secondary: "#F1F2F6",
         hitam: "#444444",
         buttonh: "#00a550",
-        button: "#1E9ADF",
+        button: "#0f4c82",
         hoverb: "#FFC100",
       },
       screens: {
@@ -31,5 +31,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), require("tailwindcss"), require("autoprefixer")],
 };

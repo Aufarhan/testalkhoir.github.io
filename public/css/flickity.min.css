@@ -36,13 +36,13 @@ https://flickity.metafizzy.co
 }
 .flickity-button {
   position: absolute;
-  background: #444444;
-  opacity: 80%;
+  background: #ffc100;
+  padding: 5px;
 }
 .flickity-button:hover {
   transition: 120ms;
   opacity: 100%;
-  background: #ffc100;
+  background: black;
   fill: aliceblue;
   cursor: pointer;
   -webkit-transition: 120ms;
@@ -63,7 +63,7 @@ https://flickity.metafizzy.co
   pointer-events: none;
 }
 .flickity-button-icon {
-  fill: #444444;
+  fill: #ffc100;
 }
 .flickity-prev-next-button {
   top: 50%;
