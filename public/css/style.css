@@ -1087,8 +1087,8 @@ input:checked + .toggle-bg {
   z-index: -10;
 }
 
-.-z-40 {
-  z-index: -40;
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -1209,14 +1209,6 @@ input:checked + .toggle-bg {
   margin-top: 0.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1233,12 +1225,20 @@ input:checked + .toggle-bg {
   margin-top: 2.25rem;
 }
 
+.mt-\[60vh\] {
+  margin-top: 60vh;
+}
+
 .mt-auto {
   margin-top: auto;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1289,8 +1289,12 @@ input:checked + .toggle-bg {
   height: 1.5rem;
 }
 
-.h-\[400px\] {
-  height: 400px;
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-\[48px\] {
@@ -1309,10 +1313,6 @@ input:checked + .toggle-bg {
   height: 760px;
 }
 
-.h-\[920px\] {
-  height: 920px;
-}
-
 .h-max {
   height: -moz-max-content;
   height: max-content;
@@ -1322,7 +1322,7 @@ input:checked + .toggle-bg {
   height: 1px;
 }
 
-.h-screen {
+.h-\[100vh\] {
   height: 100vh;
 }
 
@@ -1517,6 +1517,10 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -1569,6 +1573,10 @@ input:checked + .toggle-bg {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -1586,10 +1594,6 @@ input:checked + .toggle-bg {
 
 .gap-y-3 {
   row-gap: 0.75rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1656,6 +1660,16 @@ input:checked + .toggle-bg {
 .rounded-r-lg {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-t-\[80px\] {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .border {
@@ -2006,11 +2020,6 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2034,11 +2043,6 @@ input:checked + .toggle-bg {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.py-\[380px\] {
-  padding-top: 380px;
-  padding-bottom: 380px;
 }
 
 .pb-1 {
@@ -2924,6 +2928,46 @@ Animation System by Neale Van Fleet from Rogue Amoeba
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  @media (min-width: 640px) {
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .lg\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1320px) {
+    .lg\:container {
+      max-width: 1320px;
+    }
+  }
+}
+
 .hover\:border-button:hover {
   --tw-border-opacity: 1;
   border-color: rgb(15 76 130 / var(--tw-border-opacity));
@@ -3149,6 +3193,27 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     margin-right: 0.25rem;
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .sm\:gap-y-9 {
+    row-gap: 2.25rem;
+  }
+
+  .sm\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
+  }
+
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -3168,6 +3233,11 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     top: 210px;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -3185,6 +3255,10 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     margin-top: 1rem;
   }
 
+  .md\:mt-\[50vh\] {
+    margin-top: 50vh;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3195,6 +3269,10 @@ Animation System by Neale Van Fleet from Rogue Amoeba
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -3209,8 +3287,8 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     height: 46px;
   }
 
-  .md\:h-\[520px\] {
-    height: 520px;
+  .md\:h-\[60px\] {
+    height: 60px;
   }
 
   .md\:h-full {
@@ -3254,6 +3332,14 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     width: 100%;
   }
 
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3283,6 +3369,15 @@ Animation System by Neale Van Fleet from Rogue Amoeba
          column-gap: 1.5rem;
   }
 
+  .md\:gap-y-9 {
+    row-gap: 2.25rem;
+  }
+
+  .md\:rounded-t-2xl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
   .md\:border-0 {
     border-width: 0px;
   }
@@ -3309,11 +3404,6 @@ Animation System by Neale Van Fleet from Rogue Amoeba
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .md\:py-\[270px\] {
-    padding-top: 270px;
-    padding-bottom: 270px;
   }
 
   .md\:pb-8 {
@@ -3361,6 +3451,10 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     margin-bottom: 2rem;
   }
 
+  .lg\:mt-\[40vh\] {
+    margin-top: 40vh;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3373,8 +3467,21 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     display: none;
   }
 
+  .lg\:h-\[40px\] {
+    height: 40px;
+  }
+
   .lg\:h-\[540px\] {
     height: 540px;
+  }
+
+  .lg\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
+  .lg\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .lg\:px-14 {
@@ -3382,13 +3489,18 @@ Animation System by Neale Van Fleet from Rogue Amoeba
     padding-right: 3.5rem;
   }
 
-  .lg\:py-\[180px\] {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 }
