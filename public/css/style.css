@@ -1379,6 +1379,10 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -3351,6 +3355,11 @@ Animation System by Neale Van Fleet from Rogue Amoeba
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:shadow-none {
