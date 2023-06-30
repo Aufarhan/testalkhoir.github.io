@@ -99,7 +99,7 @@ https://flickity.metafizzy.co
   width: 100%;
   bottom: -25px;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   list-style: none;
   text-align: center;
   line-height: 1;
@@ -111,7 +111,7 @@ https://flickity.metafizzy.co
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 0 8px;
+  margin: 8px;
   background: #ffc100;
   border-radius: 50%;
   opacity: 0.25;
