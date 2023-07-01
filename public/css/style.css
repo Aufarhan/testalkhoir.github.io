@@ -1238,6 +1238,18 @@ input:checked + .toggle-bg {
   margin-top: auto;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1319,6 +1331,10 @@ input:checked + .toggle-bg {
   max-height: 0px;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1337,6 +1353,10 @@ input:checked + .toggle-bg {
 
 .w-2 {
   width: 0.5rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-20 {
@@ -1377,10 +1397,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .max-w-6xl {
@@ -1738,6 +1754,19 @@ input:checked + .toggle-bg {
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
+.border-primary\/90 {
+  border-color: rgb(15 76 130 / 0.9);
+}
+
+.border-primary\/80 {
+  border-color: rgb(15 76 130 / 0.8);
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 76 130 / var(--tw-border-opacity));
+}
+
 .border-b-slate-300 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(203 213 225 / var(--tw-border-opacity));
@@ -1830,6 +1859,18 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-primary\/50 {
+  background-color: rgb(15 76 130 / 0.5);
+}
+
+.bg-primary\/80 {
+  background-color: rgb(15 76 130 / 0.8);
+}
+
+.bg-primary\/90 {
+  background-color: rgb(15 76 130 / 0.9);
 }
 
 .bg-opacity-50 {
@@ -2084,6 +2125,22 @@ input:checked + .toggle-bg {
   padding-top: 1.5rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-0\.5 {
+  padding-bottom: 0.125rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2333,6 +2390,11 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(15 76 130 / var(--tw-ring-opacity));
 }
 
+.ring-secondary {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(241 242 246 / var(--tw-ring-opacity));
+}
+
 .ring-offset-2 {
   --tw-ring-offset-width: 2px;
 }
@@ -2348,6 +2410,26 @@ input:checked + .toggle-bg {
 
 .brightness-\[\.55\] {
   --tw-brightness: brightness(.55);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-50 {
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-\[\.95\] {
+  --tw-brightness: brightness(.95);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-\[\.85\] {
+  --tw-brightness: brightness(.85);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-\[\.65\] {
+  --tw-brightness: brightness(.65);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3355,11 +3437,6 @@ Animation System by Neale Van Fleet from Rogue Amoeba
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .md\:shadow-none {
